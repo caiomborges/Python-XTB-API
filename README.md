@@ -161,19 +161,19 @@ Parameters:
 * minutes - optional - Number of minutes from the current time for the transaction to expire.
 
 values cmd:
-BUY	        0	buy.
-SELL	      1	sell.
-BUY_LIMIT	  2	buy limit.
-SELL_LIMIT	3	sell limit.
-BUY_STOP	  4	buy stop.
-SELL_STOP	  5	sell stop.
+* BUY	        0	buy.
+* SELL	      1	sell.
+* BUY_LIMIT	  2	buy limit.
+* SELL_LIMIT	3	sell limit.
+* BUY_STOP	  4	buy stop.
+* SELL_STOP	  5	sell stop.
 
 values transaction_type:
-OPEN	    0	    order open.
-PENDING	  1	    DOES NOT WORK.
-CLOSE	    2	    order close.
-MODIFY	  3	    order modify.
-DELETE	  4	    order delete.
+* OPEN	    0	    order open.
+* PENDING	  1	    DOES NOT WORK.
+* CLOSE	    2	    order close.
+* MODIFY	  3	    order modify.
+* DELETE	  4	    order delete.
 
 ```python
 status, order_code = API.make_Trade("USDCAD", 0, 0, 0.1, comment="000001")
@@ -187,10 +187,10 @@ Parameters:
 * order - required - Order code.
 
 status values:
-ERROR 	  0	error.
-PENDING	  1	pending.
-ACCEPTED	3	The transaction has been executed successfully.
-REJECTED	4	The transaction has been rejected.
+* ERROR 	  0	error.
+* PENDING	  1	pending.
+* ACCEPTED	3	The transaction has been executed successfully.
+* REJECTED	4	The transaction has been rejected.
 
 ```python
 status = API.check_Trade(419113948)
