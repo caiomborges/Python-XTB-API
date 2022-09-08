@@ -6,7 +6,7 @@ To use this API you need the following installed in your system:
 * websocket-client 1.4.1
 * openpyxl 3.0.10
 
-You cand get the python installer in the python official website: 
+You can get the python installer in the python official website: 
 https://www.python.org/downloads/
 
 For installing the other modules you're going to need pip installed in your system, if you don't have it yet, you can find it here:
