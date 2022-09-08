@@ -14,8 +14,10 @@ https://pypi.org/project/pip/
 
 If you already have pip, then you can install the modules either by executing the "install.bat" script or by using the following command line commands:
 
+```
 pip install websocket-client==1.4.1
 pip install openpyxl==3.0.10
+```
 
 # First Steps
 
