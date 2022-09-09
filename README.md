@@ -162,7 +162,7 @@ Parameters:
 * hours - optional - Number of hours from the current time for the transaction to expire.
 * minutes - optional - Number of minutes from the current time for the transaction to expire.
 
-values cmd:
+Values cmd:
 * BUY - 0 - buy.
 * SELL - 1 - sell.
 * BUY_LIMIT - 2 - buy limit.
@@ -170,7 +170,7 @@ values cmd:
 * BUY_STOP - 4 - buy stop.
 * SELL_STOP - 5 - sell stop.
 
-values transaction_type:
+Values transaction_type:
 * OPEN - 0 - order open.
 * PENDING - 1 - DOES NOT WORK.
 * CLOSE - 2 - order close.
@@ -188,7 +188,7 @@ Description: Returns current transaction status.
 Parameters:
 * order - required - Order code.
 
-status values:
+Values status:
 * ERROR - 0 - error.
 * PENDING - 1 - pending.
 * ACCEPTED - 3 - The transaction has been executed successfully.
