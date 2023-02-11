@@ -536,11 +536,11 @@ class XTB:
         temp = temp.total_seconds()
         temp = float(temp)
         if temp>=8.0:
-            connect()
+            self.connect()
         self.exec_start = self.get_time()
 
     def is_open(self, symbol):
-        candles = get_Candles("M1", symbol, qty_candles=1)
+        candles = self.get_Candles("M1", symbol, qty_candles=1)
         if len(candles)==1:
             return False
         else:
