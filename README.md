@@ -84,7 +84,7 @@ Parameters:
 * qty_candles - optional - Number of candles you want to retrieve information of.
 
 ```python
-list = API.get_Candles("M1", "AUDUSD", start="05/22/2020 00:00:00", end="07/03/2022 12:00:00")
+list = API.get_CandlesRange("M1", "AUDUSD", start="05/22/2020 00:00:00", end="07/03/2022 12:00:00")
 ```
 
 ## get_ServerTime
