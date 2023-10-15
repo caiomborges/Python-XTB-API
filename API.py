@@ -333,6 +333,20 @@ class XTB:
         symbol = result["returnData"]
         return symbol
 
+    def get_Trades(self, openedOnly=True):
+        trades ={
+            "command": "getTrades",
+            "arguments": {
+                        "openedOnly": openedOnly
+                }
+        }
+        trades_json = json.dumps(trades)
+        result = self.send(trades_json)
+        result = json.loads(result)
+        ###print (result)
+        trades = result["returnData"]
+        return trades
+
     def make_Trade(self, symbol, cmd, transaction_type, volume, comment="", order=0, sl=0, tp=0, days=0, hours=0, minutes=0):
         price = self.get_Candles("M1",symbol,qty_candles=1)
         price = price[1]["open"]+price[1]["close"]
